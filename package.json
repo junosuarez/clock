@@ -1,0 +1,19 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "clock interface for inversion-of-control",
+  "repository": "git@github.com:js-n/clock.git",
+  "main": ".",
+  "types": ".",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm {*.d.ts,*.js.map,*.js}",
+    "test": "true"
+  },
+  "keywords": [],
+  "author": "jsdnxx",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.4.1"
+  }
+}
