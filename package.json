@@ -1,6 +1,6 @@
 {
   "name": "clock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "clock interface for inversion-of-control",
   "repository": "git@github.com:js-n/clock.git",
   "main": "index.js",
