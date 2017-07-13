@@ -3,14 +3,35 @@
   "version": "1.0.0",
   "description": "clock interface for inversion-of-control",
   "repository": "git@github.com:js-n/clock.git",
-  "main": ".",
-  "types": ".",
+  "main": "index.ts",
+  "types": "index.d.ts",
   "scripts": {
+    "prebuild": "npm run clean",
     "build": "tsc",
-    "clean": "rm {*.d.ts,*.js.map,*.js}",
-    "test": "true"
+    "clean": "rm -f {*.d.ts,*.js.map,*.js}",
+    "test": "true",
+    "prepublish": "npm run build",
+    "postpublish": "npm run clean"
   },
-  "keywords": [],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "index.js.map"
+  ],
+  "keywords": [
+    "typescript",
+    "clock",
+    "interface",
+    "ioc",
+    "inversion-of-control",
+    "inject",
+    "testing",
+    "test",
+    "mock",
+    "stub",
+    "time",
+    "date"
+  ],
   "author": "jsdnxx",
   "license": "ISC",
   "devDependencies": {
