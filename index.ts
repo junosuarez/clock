@@ -1,16 +1,9 @@
-export type milliseconds = number
-export type seconds = number
-
 export interface Clock {
   /**
    * Returns the timestamp in milliseconds since the Unix epoch
    *
    */
-  now (): milliseconds
-}
-
-export function getSSE(clock: Clock) {
-  return Math.round(clock.now() / 1000)
+  now (): number
 }
 
 export const systemClock: Clock = {now: Date.now}
